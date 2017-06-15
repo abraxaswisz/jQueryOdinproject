@@ -4,6 +4,19 @@
 	font-family: Tahoma, Arial;
 }
 .container {
+	width:50vw;
+	margin: 0 auto;
 
-	
+}
+.container > h1 {
+	text-align: center;
+	margin-top: 100px;
+}
+.container > .pudlo > .onepixel {
+	width: 25px;
+	height: 25px;
+	border:solid black 1px;
+}
+.pudlo {
+	margin-top: 50px;
 }
