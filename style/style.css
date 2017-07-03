@@ -49,21 +49,21 @@ body {
 	padding-top: 100%;
 }
 
-.zmianakoloru {
+.kolorki {
+	margin:0 auto;
+	width:50%;
+	text-align:center;
+	display:none;
+}
+.czerwony, .zielony, .niebieski {
+
+}
+.zmianakoloruczerwony {
 	background-color: red;
 }
-
-
-
-
 .zmianakoloruniebieski {
 	background-color: blue;
 }
 .zmianakoloruzielony {
 	background-color: green;
-}
-.czerwony, .zielony, .niebieski {
-	display:flex;
-	margin:0 auto;
-	flex-direction:row;
 }

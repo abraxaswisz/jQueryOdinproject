@@ -3,57 +3,50 @@ $(document).ready(function () {
 	$('body').fadeIn(1000);
 
 	$('.ustawliczbe').click(function(){
-	$('.pudlo').empty();
+		$('.pudlo').empty();
 
-	function siatkaKomorek() {
+		function siatkaKomorek() {
 
-	let komorki = prompt('ile komorek?');
-		$('.pudlo').show(1000);
-		let iloscKomorek = komorki * komorki;
-		let $dodajPixel = $('<div class="onepixel"></div>').text("");
-		for (let i = 0; i < iloscKomorek; i++) {
-			$dodajPixel = $('<div class="onepixel"></div>').text("");
-			$('.pudlo').append($dodajPixel);
+			let komorki = prompt('ile komorek?');
+			$('.pudlo').show(1000);
+			$('.kolorki').show(1000);
+			let iloscKomorek = komorki * komorki;
+			let $dodajPixel = $('<div class="onepixel"></div>').text("");
+			for (let i = 0; i < iloscKomorek; i++) {
+				$dodajPixel = $('<div class="onepixel"></div>').text("");
+				$('.pudlo').append($dodajPixel);
+			}
+			let szerokosc = 800 / komorki;
+			$('.onepixel').css('width',szerokosc+"px")
+
 		}
-		let szerokosc = 800 / komorki;
-		$('.onepixel').css('width',szerokosc+"px")
+		siatkaKomorek();
 
-	}
-	siatkaKomorek();
-	
-// czerwony
-	$('.czerwony').on('click', function(){
+			$('.czerwony').on('click', function(){
+				$('.onepixel').on('mouseenter', function(){
+					$(this).removeClass('zmianakoloruniebieski zmianakoloruzielony').addClass('zmianakoloruczerwony');
+
+
+				})
+			});
+$('.niebieski').on('click', function(){
 	$('.onepixel').on('mouseenter', function(){
-		$(this).removeClass('zmianakoloruniebieski zmianakoloruzielony').addClass('zmianakoloru');
+		$(this).removeClass('zmianakoloruczerwony zmianakoloruzielony').addClass('zmianakoloruniebieski');
 
 
 	})
 });
-//
-// niebieski
-	$('.niebieski').on('click', function(){
+$('.zielony').on('click', function(){
 	$('.onepixel').on('mouseenter', function(){
-		$(this).removeClass('zmianakoloru zmianakoloruzielony').addClass('zmianakoloruniebieski');
+		$(this).removeClass('zmianakoloruczerwony zmianakoloruniebieski').addClass('zmianakoloruzielony');
 
 
 	})
 });
-// zielony 
-	$('.zielony').on('click', function(){
-	$('.onepixel').on('mouseenter', function(){
-		$(this).removeClass('zmianakoloru zmianakoloruniebieski').addClass('zmianakoloruzielony');
-
-
-	})
-});
-//
-
-
-	$('.wyczysc').click(function(){
-			$('.onepixel').removeClass('zmianakoloru zmianakoloruniebieski zmianakoloruzielony');
-
-
-	})
+$('.wyczysc').click(function(){
+	$('.onepixel').removeClass('zmianakoloruczerwony zmianakoloruniebieski zmianakoloruzielony');
+})
 
 });
 });
+
