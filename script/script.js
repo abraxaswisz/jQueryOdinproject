@@ -21,6 +21,10 @@ $(document).ready(function () {
 		}
 
 	})
+	$('.wyczysc').click(function(){
+		$('.zmianakoloru').removeClass('zmianakoloru');
+
+	})
 
 });
 });

@@ -7,7 +7,7 @@ body {
 	background-color: #39272F;
 }
 .container {
-	width:1000px;
+	width:960px;
 	margin: 0 auto;
 
 }
@@ -20,20 +20,24 @@ body {
 	display:block;
 	margin: 50px auto;
 }
-.container > .pudlo > .onepixel {
-	width: 25px;
-	height: 25px;
+.onepixel {
+	width: 2%;
 	border:solid black 1px;
 	display:inline-block;
 	margin:0;
 	float:left;
+}
+.onepixel:before {
+	content:"";
+	display:block;
+	padding-top: 100%;
 }
 .pudlo {
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 50px;
 	background-color: #cb8d7a;
-	width:1000px;
+	width:100%;
 }
 .zmianakoloru {
 	background-color: red;
