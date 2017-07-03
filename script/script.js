@@ -20,18 +20,37 @@ $(document).ready(function () {
 
 	}
 	siatkaKomorek();
+	
+// czerwony
+	$('.czerwony').on('click', function(){
+	$('.onepixel').on('mouseenter', function(){
+		$(this).removeClass('zmianakoloruniebieski zmianakoloruzielony').addClass('zmianakoloru');
 
-	$('.onepixel').on('click', function(){
-		$(this).addClass('zmianakoloru');
-		if($('.onepixel').hasClass('zmianakoloru')) {
-			$('.onepixel').on('mouseenter', function(){
-				$(this).addClass('zmianakoloru');
-			});
-		}
 
 	})
+});
+//
+// niebieski
+	$('.niebieski').on('click', function(){
+	$('.onepixel').on('mouseenter', function(){
+		$(this).removeClass('zmianakoloru zmianakoloruzielony').addClass('zmianakoloruniebieski');
+
+
+	})
+});
+// zielony 
+	$('.zielony').on('click', function(){
+	$('.onepixel').on('mouseenter', function(){
+		$(this).removeClass('zmianakoloru zmianakoloruniebieski').addClass('zmianakoloruzielony');
+
+
+	})
+});
+//
+
+
 	$('.wyczysc').click(function(){
-			$('.onepixel').removeClass('zmianakoloru');
+			$('.onepixel').removeClass('zmianakoloru zmianakoloruniebieski zmianakoloruzielony');
 
 
 	})

@@ -41,7 +41,6 @@ body {
 	display:inline-block;
 	margin:0;
 	float:left;
-	border:solid black 1px;
 
 }
 .onepixel:after {
@@ -53,6 +52,10 @@ body {
 .zmianakoloru {
 	background-color: red;
 }
+
+
+
+
 .zmianakoloruniebieski {
 	background-color: blue;
 }
