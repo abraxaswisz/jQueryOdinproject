@@ -20,7 +20,7 @@ body {
 	margin-top: 100px;
 	color:#cb8d7a;;
 }
-.container > button {
+.ustawliczbe, .wyczysc {
 	display:block;
 	margin: 50px auto;
 }
@@ -31,15 +31,14 @@ body {
 	margin-right: auto;
 	margin-top: 50px;
 	background-color: #cb8d7a;
-	width:100%;
-	display:table;
+	display:none;
+	width:800px;
+	height:800px;
 }
 
 
 .onepixel {
-	width: 5%;
 	display:inline-block;
-	display:hidden;
 	margin:0;
 	float:left;
 	border:solid black 1px;
@@ -53,4 +52,15 @@ body {
 
 .zmianakoloru {
 	background-color: red;
+}
+.zmianakoloruniebieski {
+	background-color: blue;
+}
+.zmianakoloruzielony {
+	background-color: green;
+}
+.czerwony, .zielony, .niebieski {
+	display:flex;
+	margin:0 auto;
+	flex-direction:row;
 }
