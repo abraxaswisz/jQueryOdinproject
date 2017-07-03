@@ -1,11 +1,15 @@
+
 $(document).ready(function () {
+	$('body').fadeIn(1000);
 	$('.ustawliczbe').click(function(){
+	$('.pudlo').empty();
+
 	function siatkaKomorek() {
 
 	let komorki = prompt('ile komorek?');
-
+		komorki = komorki * komorki;
 		let $dodajPixel = $('<div class="onepixel"></div>').text("");
-		for (let i = 0; i <= komorki; i++) {
+		for (let i = 0; i < komorki; i++) {
 			$dodajPixel = $('<div class="onepixel"></div>').text("");
 			$('.pudlo').append($dodajPixel);
 		}
@@ -22,7 +26,8 @@ $(document).ready(function () {
 
 	})
 	$('.wyczysc').click(function(){
-		$('.zmianakoloru').removeClass('zmianakoloru');
+			$('.pudlo').empty();
+
 
 	})
 
