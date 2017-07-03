@@ -16,7 +16,7 @@ $(document).ready(function () {
 				$dodajPixel = $('<div class="onepixel"></div>').text("");
 				$('.pudlo').append($dodajPixel);
 			}
-			let szerokosc = 800 / komorki;
+			let szerokosc = 500 / komorki;
 			$('.onepixel').css('width',szerokosc+"px")
 
 		}
